@@ -32,3 +32,15 @@ def compile(fname)
     FileUtils.mv(ofnm,ENV["PWD"])
   end
 end
+
+def funding_category
+  {:regular       => "Regular Research (R)",
+   :graduate      => "Graduate School Research (G)",
+   :competitive   => "Competitive Research Funding (P)",
+   :collaborative => "Collaborative Research (A)",
+   :commissioned  => "Commissioned Research (B)",
+   :grant         => "Grant/Donation (C/E)",
+   :subsidy       => "Research Subsidy from Fukushima Foundation (F)",
+   :kakenhi       => "Grant-In-Aid for Scientific Research (H)"
+  }
+end

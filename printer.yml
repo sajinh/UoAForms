@@ -10,4 +10,7 @@ goods:
   amount: JPY 8,473
 remarks: '\textquote{
 The printer is the friend of intelligence, of thought; he is the friend of liberty, of freedom, of law; indeed, the printer is the friend of every man who is the friend of order; the friend of every man who can read. Of all inventions, of all the discoveries in science or art, of all the great results in the wonderful progress of mechanical energy and skill, the printer is the only product of civilization necessary to the existence of free man.} --- Charles Dickens'
-funding_category: grant
+funding_category: grant       #[regular,graduate,competitive,collaborative,commissioned,
+                              #grant,subsidy,kakenhi]
+library_classification: none  #[none,periodicals,durable]
+order_type: store #[online,fax,phone] to be implemented, if needed.

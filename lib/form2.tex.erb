@@ -1,0 +1,20 @@
+\documentclass[a4,14pt]{form2}
+
+\begin{document}
+
+\sealbox % typeset the boxes for putting seals
+
+\appdetails
+ {<%= @user_submitted %>}   % date of submission
+ {<%= @user_name %>} % name
+ {<%= @user_extension %>} % Extension
+ {<%= @goods_delivered_on %>} % date of purchase/delivery of goods
+
+
+\begin{misc}
+  \miscbudget
+    {<%= @user_budget %>}  % budget
+    {<%= @remarks %>}   % remarks
+\end{misc}
+
+\end{document}
