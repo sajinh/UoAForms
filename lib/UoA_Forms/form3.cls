@@ -1,0 +1,139 @@
+\ProvidesClass{uoa-form3}[2018/10/09 form class]
+\NeedsTeXFormat{LaTeX2e}
+
+\LoadClass{article}
+% If you want the Japanese characters to be typeset, use an appropriate
+% font from your system. I used mikachan-P as shown below.
+\RequirePackage{xeCJK}
+\setCJKmainfont{mikachan-P}
+
+\RequirePackage[left=2.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage{csquotes}
+\RequirePackage{tabu}
+\RequirePackage{multirow}
+\RequirePackage{tikz}
+\RequirePackage{amssymb}
+\RequirePackage{tcolorbox}
+\RequirePackage{parskip}
+\pagestyle{empty}
+
+
+\newcommand{\gydfnt}{}
+\newcommand{\entfnt}[1]{\textsf{\textbf{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%
+% Remarks
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\remarks}{
+  \textbf{Remarks}
+  \begin{enumerate}
+    \item Attach documents dealing with your business and itinerary. For your
+          conference presentations, attach your paper or an abstract.
+   \item When conducting a research meeting, enter the names, positions, and
+         affiliations of the other parties.
+   \item Circle the applicable method(s) of transportation. When using highway buses, 
+         or air travel, enter the intervals in which you will use them. 
+         For air travel, also attach documents showing the details of your reservations.
+  \end{enumerate}
+}
+
+\newcommand{\sealbox}{
+  \textbf{Form 3} (For Research Funds)\\
+  \hspace*{4ex}
+   \hfill
+  \begin{tabu} to 0.6\textwidth{|X[c]|X[c]|X[c]|}
+    \hline
+    \multicolumn{2}{|c|}{\gydfnt Delivery Confirmation} & \gydfnt Collaboration and Support Section \\
+   \hline
+    &&\\
+    &&\\
+   \hline
+  \end{tabu}
+  \\
+}
+
+\newcommand{\appdetails}[3]{%
+\gydfnt \textbf{\large Reimbursement Request Form for Advance Payments for Goods\\
+made by Faculty (立替払いtatekae-barai)} \hspace{5cm}
+\hfill Date: \entfnt{#1} \\ 
+TO: The Director of the Planning and Collaboration Division \\
+\hspace*{30ex} \hfill Name: \entfnt{#2}\hspace{1cm} Seal\hspace{1cm} Ext: \entfnt{#3}
+
+
+This is to request reimbursement of expenses described below which I have
+paid for.\\
+}
+
+\setlength{\parskip}{0em}
+
+\newenvironment{report}{%
+
+ \textbf{1. Details}\\
+
+  \begin{tabu} to 1.0\textwidth{|X|X|X|X|}
+}{%
+  \end{tabu}
+}
+\newcommand{\details}[5]{
+\hline
+&&&\\
+\gydfnt{Reimbursement for}  &\entfnt{#1} &\gydfnt{Amount} &\entfnt{#2}\\
+&&&\\
+\hline
+&&&\\
+\gydfnt{Delivery date}  &\entfnt{#3} &\gydfnt{Payment or bank draft date} &\entfnt{#4}\\
+&&&\\
+\hline
+&\multicolumn{3}{l|}{}\\
+\gydfnt{Reasons for this advance payment} &\multicolumn{3}{p{\dimexpr 3\tabucolX+3\tabcolsep+\arrayrulewidth\relax}|}
+{8. Entrance fees and registration fees for attendance at
+                         academic conferences, international conferences, etc.}\\
+\hline
+&\multicolumn{3}{l|}{}\\
+\gydfnt{Remarks} &\multicolumn{3}{l|}{\entfnt{#5}}\\
+&\multicolumn{3}{l|}{}\\
+\hline
+}
+
+\newenvironment{misc}{%
+}
+
+\newcommand{\miscbudget}[1]{%
+  \textbf{2. Budget Sources (please enter the Theme no.)}\hfill\fbox{Theme No.}\fbox{\entfnt{#1}} 
+  \\
+  \\
+  Refer to the following regarding the types of research funding\\ Regular Research
+  (R), Graduate School Research (G), Competitive Research Funding (P),\\
+  Collaborative Research (A),  Commissioned Research (B)  Grant Donation (C/E),\\
+  Research Subsidy from Fukushima Foundation (F), Grant-In-Aid for Scientific
+  Research (H)\\
+  \\
+  \textbf{3. Library Material Classification (Please check the relevant box if applicable.)}
+  \small
+  \\
+  
+    \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Periodicals etc. (Materials which do not fall under the category
+                   	extquote{Durable Library Materials} above\\
+  
+    \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Durable Library Materials (Publications to be in use for at least one year).\\
+  
+
+  <Necessary Attachments>\\
+
+  
+    \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Cash payments: Receipts (original)\\
+  
+    \rule{2.4ex}{2.4ex}\ Credit card payments: copy of the relevant card bill (irrelevant
+             sections may be blacked out)\\
+  
+
+  \textbf{(Note)} Credit card payments close January 31. Consult with the
+  Planning and Collaboration Division beforehand if you are forced to make
+  payments in February/March for some unavoidable reason. If you failed to
+  contact the division beforehand, report such payments to the division within
+  five days of the payment date.  \\
+  \\
+  \textbf{(Note)} \textquote{Less than JPY 100,000 and JPY 10,000 or
+  less} refer to the total price of a single purchase, including tax and
+  shipping.\\
+}

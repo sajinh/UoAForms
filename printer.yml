@@ -1,0 +1,13 @@
+form: 2
+user:
+  name: Nijas  Deemah
+  extension: 6372
+  budget: E-2.71828
+  submitted: 12/31/2008
+goods:
+  delivered_on: 05-November-2008
+  kind: Color printer
+  amount: JPY 8,473
+remarks: '\textquote{
+The printer is the friend of intelligence, of thought; he is the friend of liberty, of freedom, of law; indeed, the printer is the friend of every man who is the friend of order; the friend of every man who can read. Of all inventions, of all the discoveries in science or art, of all the great results in the wonderful progress of mechanical energy and skill, the printer is the only product of civilization necessary to the existence of free man.} --- Charles Dickens'
+funding_category: grant

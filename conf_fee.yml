@@ -1,0 +1,20 @@
+form: 3
+user:
+  name: Nijas  Deemah
+  extension: 6372
+  budget: Pi-3.14
+  submitted: 12/31/2008
+payment:
+  purpose: Registration Fee for Improbable Research conference
+  type: conference_fee
+  amount: JPY 8,473
+  paid_on: 10-Dec-2008
+goods:
+  delivered_on: 05-November-2008
+remarks: '\textquote{Bitzer,} said Thomas Gradgrind. “Your definition of a horse.”
+“Quadruped. Graminivorous. Forty teeth; namely, twenty-four grinders, four eye-teeth, and twelve incisive. Sheds coat in the Spring; in marshy countries, sheds hoofs, too. Hoofs hard, but requiring to be shod with iron. Age known by marks in mouth.” Thus (and much more) Bitzer.
+“Now girl number twenty,” said Mr. Gradgrind. “You know what a horse is.” --- Charles Dickens'
+#The conference blew away the remainder of my skeptical thoughts
+attachments: credit_card_receipt
+library_classification: none
+funding_category: competitive
