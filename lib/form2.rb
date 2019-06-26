@@ -10,8 +10,8 @@ class Form2
     }
   end
   def library_classification
-   {:periodicals => "Periodicals etc. (Materials which do not fall under the category
-                   \textquote{Durable Library Materials} above",
+   {:periodicals => 'Periodicals etc. (Materials which do not fall under the category
+                   \textquote{Durable Library Materials} above',
     :durable => "Durable Library Materials (Publications to be in use for at least one year)."
    }
   end

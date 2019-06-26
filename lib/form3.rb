@@ -1,9 +1,7 @@
 require File.join(File.dirname(__FILE__),"uoa_forms_module")
 require 'erb'
-class Form3
 
-  def initialize
-  end
+class Form3
 
   def payment_types
     {:toll => "1. Toll-road fares", 

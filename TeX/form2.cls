@@ -98,15 +98,17 @@ Total &&&\\
 \newcommand{\miscbudget}[2]{
 \textbf{4. Budget Sources (Please check the applicable box )}\hfill\fbox{Theme No.}\fbox{\entfnt{#1}} 
 \\
-Planning and Collaboration Division-Managed Budgets 
+Planning and Collaboration Division-Managed Budgets
+
 \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Regular Research (R) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Graduate School Research (G) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Competitive Research Funding (P) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Collaborative Research (A) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Commissioned Research (B) \rule{2.4ex}{2.4ex}\ Grant/Donation (C/E) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Research Subsidy from Fukushima Foundation (F) \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Grant-In-Aid for Scientific Research (H)
 \\
+
 \textbf{5. Library Material Classification (Please check the relevant box if applicable.)}
 \\
 \small
 
     \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Periodicals etc. (Materials which do not fall under the category
-                   	extquote{Durable Library Materials} above\\
+                   \textquote{Durable Library Materials} above\\
   
     \fbox{\phantom{\rule{0.6ex}{0.6ex}}} Durable Library Materials (Publications to be in use for at least one year).\\
   
