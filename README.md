@@ -22,3 +22,5 @@ may need to `chmod 755 bin/uoa_forms.rb`. You can also invoke this using `ruby b
 This executable needs one argument, the name of the
 "YAML" file containing your form data (in yml format). See conf_fee.yml and printer.yml for
 examples.  The comments are deliberately made long just for your entertainment.
+
+Try making Form2 using `bin/uoa_forms.rb printer.yml`
