@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.6.28)  26 JUN 2019 14:31
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2019.7.12)  23 JUL 2019 09:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **printer.tex
 (./printer.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
 (./form2.cls
 
 LaTeX Warning: You have requested document class `form2',
@@ -1485,12 +1485,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--17
 
 ] (./printer.aux) ) 
 Here is how much of TeX's memory you used:
- 31278 strings out of 493068
- 661332 string characters out of 6137720
- 658586 words of memory out of 5000000
- 34876 multiletter control sequences out of 15000+600000
+ 31280 strings out of 495038
+ 661354 string characters out of 6179117
+ 653459 words of memory out of 5000000
+ 34749 multiletter control sequences out of 15000+600000
  5459 words of font info for 37 fonts, out of 8000000 for 9000
- 1347 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  62i,13n,75p,10442b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on printer.pdf (1 page).

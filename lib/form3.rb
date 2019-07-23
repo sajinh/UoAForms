@@ -1,8 +1,4 @@
-require File.join(File.dirname(__FILE__),"uoa_forms_module")
-require 'erb'
-
 class Form3
-
   def payment_types
     {:toll => "1. Toll-road fares", 
      :parking => "2. Parking fees",
@@ -41,9 +37,10 @@ class Form3
   end
 end
 
-def form_handler(array, yml_fnm)
-  form = Module.const_get("Form3").new
-  infile = File.join(File.dirname(__FILE__),"form3.cls.erb")
+def form_handler(ftyp, array, yml_fnm)
+  ftyp_int = ftyp.to_i
+  form = Module.const_get("Form#{ftyp_int}").new
+  infile = File.join(File.dirname(__FILE__),"form#{ftyp_int}.cls.erb")
   template = File.open(infile, 'rb', &:read)
   # ---------------------
   # @payment_type, @attachments, @library_classification
@@ -55,10 +52,10 @@ def form_handler(array, yml_fnm)
                                       array["library_classification"].to_sym)
   outfile =  File.basename(__FILE__, ".rb")+".cls"
   save_uoa_forms(ERB.new(template).result,outfile)
-  make_form(array,yml_fnm)
+  make_form(ftyp_int,array,yml_fnm)
 end
 
-def make_form(array,yml_fnm)
+def make_form(ftyp_int,array,yml_fnm)
   user = array["user"]
   user.each { |name, value| instance_variable_set("@user_#{name}", value) }
   payment = array["payment"]
@@ -66,7 +63,7 @@ def make_form(array,yml_fnm)
   goods = array["goods"]
   goods.each { |name, value| instance_variable_set("@goods_#{name}", value) }
   @remarks = array["remarks"].to_sym if array["remarks"]
-  infile = File.join(File.dirname(__FILE__),"form3.tex.erb")
+  infile = File.join(File.dirname(__FILE__),"form#{ftyp_int}.tex.erb")
   template = File.open(infile, 'rb', &:read)
   outfile =  "#{yml_fnm}.tex"
   save_uoa_forms(ERB.new(template).result,outfile)

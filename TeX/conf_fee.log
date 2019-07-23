@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.6.28)  25 JUN 2019 14:23
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2019.7.12)  23 JUL 2019 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **conf_fee.tex
 (./conf_fee.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
 (./form3.cls
 
 LaTeX Warning: You have requested document class `form3',
@@ -1518,12 +1518,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 31283 strings out of 493068
- 661435 string characters out of 6137720
- 662401 words of memory out of 5000000
- 34883 multiletter control sequences out of 15000+600000
+ 31285 strings out of 495038
+ 661457 string characters out of 6179117
+ 657273 words of memory out of 5000000
+ 34756 multiletter control sequences out of 15000+600000
  5443 words of font info for 35 fonts, out of 8000000 for 9000
- 1347 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  62i,14n,75p,10443b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on conf_fee.pdf (1 page).
